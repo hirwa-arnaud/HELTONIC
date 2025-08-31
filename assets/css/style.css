@@ -26,6 +26,150 @@
   border-left: 4px solid white;
   padding-left: 10px;
 }
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto 30px auto;
+  width: 100%;
+}
+.site-header {
+  width: 100%;
+  border-bottom: 1px solid #eaeaea;
+  padding: 15px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.logo img {
+  height: 24px;
+  margin-right: 8px;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+}
+
+.nav ul li a:hover {
+  color: #555;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-icons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header-icons img {
+  height: 20px;
+  width: 20px;
+}
+
+.hero {
+  height: 100vh;
+  background: url("assets/img/header.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 100px; 
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.0); /* transparent since text is white */
+  color: #fff;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 25px;
+  border: 1px solid #000;
+  background: #fff;
+  color: #000;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #f3f3f3;
+}
+
+/* Slider Dots */
+.slider-dots {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #fff;
+}
+.search-bar input {
+  width: 70%;
+  max-width: 600px;
+  padding: 12px 18px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.search-bar input:focus {
+  border-color: #2563EB;
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.2);
+}
+
 
 .footer-col p {
   font-size: 14px;

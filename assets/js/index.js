@@ -40,13 +40,12 @@ function decreaseQuantity() {
       loader.style.display = "none";
       content.style.display = "block";
     });
-    
-document.addEventListener("DOMContentLoaded", () => {
-  const searchInput = document.querySelector(".input input");
+    document.addEventListener("DOMContentLoaded", () => {
+  const searchInput = document.querySelector("#product-search");
   const productContainer = document.querySelector(".products");
   const productCards = Array.from(productContainer.querySelectorAll(".card"));
 
-  // Create a "no results" message
+  // "no results" message
   const noResults = document.createElement("p");
   noResults.textContent = "No results found 😢";
   noResults.style.textAlign = "center";
@@ -57,13 +56,13 @@ document.addEventListener("DOMContentLoaded", () => {
   productContainer.parentNode.appendChild(noResults);
 
   searchInput.addEventListener("input", () => {
-    const query = searchInput.value.toLowerCase();
+    const query = searchInput.value.toLowerCase().trim();
 
     const matched = [];
     const notMatched = [];
 
     productCards.forEach(card => {
-      const productName = card.querySelector("p").textContent.toLowerCase();
+      const productName = card.querySelector("h3").textContent.toLowerCase();
       const productImgAlt = card.querySelector("img").alt.toLowerCase();
 
       if (productName.includes(query) || productImgAlt.includes(query)) {
@@ -73,17 +72,24 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    // Clear container and re-append in order
     productContainer.innerHTML = "";
     matched.forEach(c => productContainer.appendChild(c));
     notMatched.forEach(c => productContainer.appendChild(c));
-
-    // Show or hide "no results" message
-    if (matched.length === 0 && query.trim() !== "") {
-      noResults.style.display = "block";
-    } else {
-      noResults.style.display = "none";
-    }
+    noResults.style.display = matched.length === 0 && query !== "" ? "block" : "none";
+  });
+});
+// Simple slider dot functionality (just toggles active state)
+const dots = document.querySelectorAll(".dot");
+dots.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    dots.forEach(d => d.classList.remove("active"));
+    dot.classList.add("active");
+    // here you could add logic to change background image if needed
   });
 });
 
+// Menu toggle demo
+const toggleBtn = document.getElementById("menu-toggle");
+toggleBtn?.addEventListener("click", () => {
+  alert("Menu clicked!");
+});
