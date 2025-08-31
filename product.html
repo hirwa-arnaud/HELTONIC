@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HELTONIC - Product</title>
+        <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="fontawesome" href="assets/webfonts/fa-solid-900.ttf">
+</head>
+<body>
+<header>
+  <div class="part-two">
+   <a href="index.html"> <img src="icon/logo.png" style="height: 70px; margin-top: 10px; cursor: pointer; width: 70px; margin-left: 15px;"></a>
+    <div class="input">
+      <input placeholder="Search essentials, Groceries and more....">
+    </div>
+    <ul class="ul">
+      <li><a href="signup.html">SIGN UP</a></li>
+      <li><a href="cart.html">CART</a></li>
+      <li><a href="service.html">SERVICES</a></li>
+      <li><a href="about.html">ABOUT US</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <div class="product-container">
+    <div class="product-gallery">
+      <img id="main-image" src="" alt="Product Image">
+    </div>
+
+    <div class="product-details">
+      <h1></h1>
+      <p class="brand">HELTONIC</p>
+      <p class="price"><span class="current-price"></span></p>
+      <p class="description"></p>
+
+      <div class="ratings">
+        ⭐⭐⭐⭐☆ <p>Rated 4.8/5 (256 reviews)</p>
+      </div>
+
+      <div class="quantity-selector">
+        <button onclick="decreaseQuantity()">-</button>
+        <input type="number" id="quantity" value="1" min="1">
+        <button onclick="increaseQuantity()">+</button>
+      </div>
+
+      <button class="add-to-cart">Add to Bag</button>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h2 class="footer-logo">HELTONIC</h2>
+      <p>
+        Heltonic is your trusted e-commerce shop for authentic Nike Air Jordans.  
+        We bring you premium sneakers at affordable prices, with worldwide delivery.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="index.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="service.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Customer Service</h3>
+      <ul>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Shipping Info</a></li>
+        <li><a href="#">Track Order</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <p><i class="fas fa-phone"></i> +250 789 123 456</p>
+      <p><i class="fas fa-envelope"></i> support@heltonic.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> Kigali, Rwanda</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Heltonic. All Rights Reserved. | Designed with ❤️ by Heltonic Team</p>
+  </div>
+</footer>
+<script src="assets/js/product.js"></script>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const id = parseInt(params.get("id"));
+  const product = products.find(p => p.id === id);
+
+  if (product) {
+    document.getElementById("main-image").src = product.image;
+    document.querySelector(".product-details h1").textContent = product.name;
+    document.querySelector(".current-price").textContent = product.price;
+    document.querySelector(".description").textContent = product.description;
+  } else {
+    document.querySelector(".product-details").innerHTML = "<h2>Product not found</h2>";
+  }
+
+  function decreaseQuantity() {
+    const q = document.getElementById("quantity");
+    if (q.value > 1) q.value--;
+  }
+  function increaseQuantity() {
+    const q = document.getElementById("quantity");
+    q.value++;
+  }
+</script>
+</body>
+</html>
