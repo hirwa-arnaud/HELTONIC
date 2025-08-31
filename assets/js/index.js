@@ -40,10 +40,21 @@ function decreaseQuantity() {
       loader.style.display = "none";
       content.style.display = "block";
     });
-    document.addEventListener("DOMContentLoaded", () => {
+    
+document.addEventListener("DOMContentLoaded", () => {
   const searchInput = document.querySelector(".input input");
   const productContainer = document.querySelector(".products");
   const productCards = Array.from(productContainer.querySelectorAll(".card"));
+
+  // Create a "no results" message
+  const noResults = document.createElement("p");
+  noResults.textContent = "No results found 😢";
+  noResults.style.textAlign = "center";
+  noResults.style.marginTop = "20px";
+  noResults.style.fontSize = "18px";
+  noResults.style.color = "#555";
+  noResults.style.display = "none";
+  productContainer.parentNode.appendChild(noResults);
 
   searchInput.addEventListener("input", () => {
     const query = searchInput.value.toLowerCase();
@@ -62,8 +73,17 @@ function decreaseQuantity() {
       }
     });
 
+    // Clear container and re-append in order
     productContainer.innerHTML = "";
     matched.forEach(c => productContainer.appendChild(c));
     notMatched.forEach(c => productContainer.appendChild(c));
+
+    // Show or hide "no results" message
+    if (matched.length === 0 && query.trim() !== "") {
+      noResults.style.display = "block";
+    } else {
+      noResults.style.display = "none";
+    }
   });
 });
+
