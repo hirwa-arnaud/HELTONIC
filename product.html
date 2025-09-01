@@ -10,22 +10,33 @@
 </head>
 <body>
 <header>
-  <div class="part-two">
-   <a href="index.html"> <img src="icon/logo.png" style="height: 70px; margin-top: 10px; cursor: pointer; width: 70px; margin-left: 15px;"></a>
-    <div class="input">
-      <input placeholder="Search essentials, Groceries and more....">
+ <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <img src="icon/logobg.png" alt="SiteLogo">
+      </div>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Team</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-icons">
+        <button aria-label="Cart"><img src="img/bag.png" alt="Cart"></button>
+        <button aria-label="Search"><img src="img/search.png" alt="Search"></button>
+        <button aria-label="Menu" id="menu-toggle"><img src="img/menu.png" alt="Menu"></button>
+      </div>
     </div>
-    <ul class="ul">
-      <li><a href="signup.html">SIGN UP</a></li>
-      <li><a href="cart.html">CART</a></li>
-      <li><a href="service.html">SERVICES</a></li>
-      <li><a href="about.html">ABOUT US</a></li>
-    </ul>
-  </div>
-</header>
+  </header>
+
 
 <main>
-  <div class="product-container">
+  <div class="product-container" style="margin-top: 100px;">
     <div class="product-gallery">
       <img id="main-image" src="" alt="Product Image">
     </div>

@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(Montserrat-Italic-VariableFont_wght.ttf);
+}
+
 .ul{
     display: flex;
     list-style: none;
@@ -38,7 +43,7 @@ li::after{
 }
 .box{
     margin: auto;
-    height: 22vh;
+    height: 25vh;
     width: 200px;
         border: 1px solid #d4d4d4;
     border-radius: 10px;
@@ -46,6 +51,7 @@ li::after{
     display: inline-block;
     background-color: #2563EB;
     color: white;
+    font-family: TASA Orbiter;
 }
 .box:hover{
         cursor: pointer;
@@ -53,16 +59,16 @@ li::after{
     box-shadow: 5px 5px 5px #585858
 }
 .box img{
+  margin-top: 8px;
     height: 120px;
     width: 120px;
-    margin-left: 30px;
+    margin-left: 20px;
     border-radius: 50%;
 }
 .box p{
     font-weight: bold;
     font-size: 20px;
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Montserrat;
 }
  h1 {
      text-align: center; 
@@ -81,6 +87,7 @@ li::after{
       text-align: center;
       box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
       transition: 0.3s;
+      font-family: TASA orbiter;
     }
     .card:hover { 
         transform: scale(1.05);

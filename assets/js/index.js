@@ -78,17 +78,14 @@ function decreaseQuantity() {
     noResults.style.display = matched.length === 0 && query !== "" ? "block" : "none";
   });
 });
-// Simple slider dot functionality (just toggles active state)
 const dots = document.querySelectorAll(".dot");
 dots.forEach((dot, index) => {
   dot.addEventListener("click", () => {
     dots.forEach(d => d.classList.remove("active"));
     dot.classList.add("active");
-    // here you could add logic to change background image if needed
   });
 });
 
-// Menu toggle demo
 const toggleBtn = document.getElementById("menu-toggle");
 toggleBtn?.addEventListener("click", () => {
   alert("Menu clicked!");

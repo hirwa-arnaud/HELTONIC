@@ -30,4 +30,16 @@ var products = [
 { id: 29, name: "Macbook laptop M4", price: "3,000,000 FRW", image: "img/78.webp", description: "Macbook laptop with the latest model M4 ftom Apple" },
 { id: 30, name: "Silver chain", price: "12,000 FRW", image: "img/56.webp", description: "Fill your neck with real silver and shiny" },
 { id: 31, name: "Movit jerry", price: "3,000 FRW", image: "img/53.jpg", description: "Movit hair oil keep your hair fresh and good" },
+{ id: 32, name: "Dell desktop", price: "1,000,000 FRW", image: "img/2885.webp", description: "Dell desktop for your work" },
+{ id: 33, name: "Manuscript book", price: "2,500 FRW", image: "img/333.webp", description: "Write in a well big book that can keep many notes and strong" },
+{ id: 34, name: "Sony Headsets", price: "5,000 FRW", image: "img/2888.jpg", description: "Good headphones with a good bass" },
+{ id: 35, name: "Adidas slides", price: "8,000 FRW", image: "img/7222.jpg", description: "Confortable slides for your feet" },
+{ id: 36, name: "Casio calculator", price: "2,000 FRW", image: "img/85.jpg", description: "Do your maths with a good casio calculator" },
+{ id: 37, name: "Nike football", price: "5,000 FRW", image: "img/377.webp", description: "Enjoy football with an original nike football" },
+{ id: 40, name: "Screen protector", price: "2,500 FRW", image: "img/57.webp", description: "Protect your phone with the best screen protectors" },
+{ id: 38, name: "Molten Basketball", price: "65,000 FRW", image: "img/85.webp", description: "play basketball with the official molten ball" },
+{ id: 39, name: "Nivea rollon", price: "4,500 FRW", image: "img/86.webp", description: "Rollon for a fresh smell" },
+{ id: 41, name: "Cactus jack", price: "25,000 FRW", image: "img/76.webp", description: "Cactus jack from Air jordans" },
+{ id: 42, name: "Air Jordan 4", price: "31,000 FRW", image: "img/82.webp", description: "Air Jordan 4 form jordan himself" },
+
 ];

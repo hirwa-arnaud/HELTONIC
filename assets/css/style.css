@@ -40,12 +40,14 @@
   top: 0;
   left: 0;
   z-index: 1000;
+  background-color: #2563EB;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
 }
 
 .logo {
@@ -56,9 +58,11 @@
 }
 
 .logo img {
-  height: 24px;
+  height: 40px;
+  width: 50px;
   margin-right: 8px;
 }
+
 
 .nav ul {
   display: flex;
@@ -93,66 +97,6 @@
   width: 20px;
 }
 
-.hero {
-  height: 100vh;
-  background: url("assets/img/header.png") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding-top: 100px; 
-}
-
-.hero-overlay {
-  background: rgba(0, 0, 0, 0.0); /* transparent since text is white */
-  color: #fff;
-  padding: 20px;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-}
-
-.btn {
-  padding: 10px 25px;
-  border: 1px solid #000;
-  background: #fff;
-  color: #000;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background: #f3f3f3;
-}
-
-/* Slider Dots */
-.slider-dots {
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.dot {
-  height: 12px;
-  width: 12px;
-  background: #ddd;
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.dot.active {
-  background: #fff;
-}
 .search-bar input {
   width: 70%;
   max-width: 600px;
@@ -183,6 +127,9 @@
 
 .footer-col ul li {
   margin: 8px 0;
+}
+.footer{
+  font-family: TASA orbiter;
 }
 
 .footer-col ul li a {
