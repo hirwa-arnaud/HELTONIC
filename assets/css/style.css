@@ -118,6 +118,7 @@
 .footer-col p {
   font-size: 14px;
   line-height: 1.6;
+  font-family: TASA Orbiter;
 }
 
 .footer-col ul {
@@ -128,14 +129,13 @@
 .footer-col ul li {
   margin: 8px 0;
 }
-.footer{
-  font-family: TASA orbiter;
-}
+
 
 .footer-col ul li a {
   text-decoration: none;
   color: #E5E7EB;
   transition: 0.3s;
+  font-family: TASA Orbiter;
 }
 
 .footer-col ul li a:hover {
