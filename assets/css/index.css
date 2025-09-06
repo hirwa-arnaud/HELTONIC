@@ -84,10 +84,16 @@ li::after{
       border-radius: 8px;
       padding: 15px;
       width: 200px;
-      text-align: center;
       box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
       transition: 0.3s;
       font-family: TASA orbiter;
+    }
+    .card p{
+      text-align: center;
+      font-family: TASA Orbiter;
+    }
+    .card h3{
+      text-align: center;
     }
     .card:hover { 
         transform: scale(1.05);
@@ -99,6 +105,22 @@ li::after{
       border-radius: 5px;
       height: 150px;
       width: 150px;
+    }
+   del{
+    color: red;
+   } 
+    .image{
+      height: 4px;
+      width: 4px;
+    }
+    .cart{
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      background-color: #2563EB;
+      margin-left: 65px;
+      border: none;
+      cursor: pointer;
     }
     a { 
         text-decoration: none;
@@ -260,7 +282,7 @@ li::after{
 
 .promotion h3 {
     font-size: 1.2rem;
-    color: #1e293b; /* Primary color */
+    color: #1e293b;
     margin-bottom: 10px;
 }
 
@@ -416,6 +438,19 @@ a{
   height: 170px;
  width: 200px;
  margin: auto;
+}
+.deals{
+  height: 35vh;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.deal{
+  margin: auto;
+}
+.deal img{
+  height: 230px;
+  width: 230px;
 }
 .partner img{
   max-height: 160px;

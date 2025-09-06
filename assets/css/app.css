@@ -8,6 +8,16 @@
   font-family: TASA Orbiter;
   src: url(TASAOrbiter-VariableFont_wght.ttf);
 }
+.off{
+  height: 30px;
+  width: 55px;
+  background-color: #2563EB;
+  border: none;
+  font-family: TASA Orbiter;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+}
 
 .slider-container {
   width: 1000px;
