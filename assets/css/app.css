@@ -19,15 +19,6 @@
   font-weight: bold;
 }
 
-.slider-container {
-  width: 1000px;
-  height: 500px;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-  margin-left: 200px;
-  margin-top: 150px;
-}
 .about-content{
   height: 100vh;
   width: 100%;

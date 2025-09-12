@@ -49,7 +49,7 @@ var products = [
 { id: 48, name: "Red lipstick", price: "2,200 FRW", image: "img/74.avif", description: "Lipstick for your lips mrs" },
 { id: 49, name: "Black vest", price: "12,000 FRW", image: "img/74.webp", description: "Vest for you in the cold" },
 { id: 50, name: "Black Jacket", price: "18,000 FRW", image: "img/94.webp", description: "Black jacket to feel like a rockstar" },
-{ id: 51, name: "Gloves", price: "4,000 FRW", image: "img/83.avif", description: "Gloves for a warm and better feeling" },
+{ id: 51, name: "Gloves", price: "4,000 FRW", image: "img/83.avif", description: "Stay warm, stylish, and protected with our versatile gloves. Whether you’re braving the cold, working outdoors, or just adding a touch of class to your outfit, these gloves are made to keep your hands comfortable all day long. Soft on the inside and durable on the outside, they’re perfect for everyday use." },
 { id: 52, name: "Lg telephone", price: "345,000 FRW", image: "img/274.avif", description: "Get yourself Lg telephone waterproof and also hard" },
 { id: 42, name: "Air Jordan 4", price: "24,000 FRW", image: "img/82.webp", description: "Air Jordan 4 form jordan himself" },
 { id: 43, name: "Bandana", price: "7,000 FRW", image: "img/86.jpg", description: "Red bandana for any occassions" },

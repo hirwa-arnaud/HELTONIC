@@ -1,3 +1,5 @@
+
+
 @font-face {
   font-family: Montserrat;
   src: url(Montserrat-Italic-VariableFont_wght.ttf);
@@ -253,8 +255,15 @@ li::after{
     border: 1px solid #ddd;
     border-radius: 5px;
 }
-
-/* Add to Cart Button */
+.experience{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
 .add-to-cart {
     background-color: #1e293b;
     color: white;
