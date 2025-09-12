@@ -72,7 +72,7 @@ li::after{
     font-size: 20px;
     font-family: Montserrat;
 }
- h1 {
+ .box h1 {
      text-align: center; 
     }
     .products {
@@ -255,15 +255,7 @@ li::after{
     border: 1px solid #ddd;
     border-radius: 5px;
 }
-.experience{
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-  color: white;
-}
+
 .add-to-cart {
     background-color: #1e293b;
     color: white;
