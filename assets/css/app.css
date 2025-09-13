@@ -42,7 +42,7 @@
   height: 500px;
   object-fit: cover;
 }
-h1{
+.part{
   text-align: center;
   font-family: TASA Orbiter;
   margin-top: 14px;
@@ -69,7 +69,7 @@ p{
   margin-top: 20px;
 }
 u{
-  color: orange;
+  color: #2563EB;
 }
 .ideas{
   height: 80vh;
@@ -81,6 +81,7 @@ u{
   height: 400px;
   width: 400px;
  margin: auto;
+ font-family: TASA Orbiter;
  border-radius: 10px;
       box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
  text-align: center;
@@ -92,4 +93,40 @@ u{
   border-radius: 10px;
   height: 290px;
   width: 400px;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30vh;
+  font-family: TASA Orbiter;
+}
+.testimonials{
+  height: 100vh;
+  width: 100%;
+}
+.test{
+  height: 70vh;
+  width: 100%;
+  background: #2563EB;
+  display: flex;
+  font-family: TASA Orbiter;
+}
+.pic{
+  height: 70vh;
+  width: 50%;
+  color: white;
+}
+.gold{
+  font-size: 30px;
+  color: yellow;
+}
+.pic p{
+  text-align: center;
+  font-family: TASA Orbiter;
+}
+.pic h2,h5{
+margin: 15px;
 }
