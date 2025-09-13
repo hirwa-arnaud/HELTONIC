@@ -72,14 +72,24 @@ u{
   color: orange;
 }
 .ideas{
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   display: flex;
   gap: 20px;
-  background-color: #2563EB;
 }
 .cont{
   height: 400px;
-  width: 500px;
-  background-color: red;
+  width: 400px;
+ margin: auto;
+ border-radius: 10px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+ text-align: center;
+}
+.cont p{
+ font-family: TASA Orbiter;
+}
+.img-space{
+  border-radius: 10px;
+  height: 290px;
+  width: 400px;
 }
