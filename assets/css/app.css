@@ -94,7 +94,11 @@ p{
   font-family: TASA Orbiter;
   margin-left: 20px;
 }
-
+.cart-pro{
+  height: 74vh;
+  width: 100%;
+  background-color: blueviolet;
+}
 .experience{
   height: 100vh;
   width: 100%;
