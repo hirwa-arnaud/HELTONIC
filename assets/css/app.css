@@ -56,49 +56,7 @@ p{
   margin-top: 20px;
   border-radius: 20px;
 }
-.hero{
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.data{
-  height: 95vh;
-  display: flex;
-  width: 95%;
-}
-.cross{
-  height: 95vh;
-  width: 54%;
-  background-color: yellow;
-}
-.cross-p{
-  height: 95vh;
-  width: 40%;
-  background-color: gray;
-}
-.title{
-  width: 80%;
-  height: 8vh;
-  border-bottom: 2px solid gray;
-}
-.cart-items{
-  width: 100%;
-  height: 80vh;
-  background-color: #2563EB;
-}
-.par{
-  height: 7vh;
-  width: 80%;
-  font-family: TASA Orbiter;
-  margin-left: 20px;
-}
-.cart-pro{
-  height: 74vh;
-  width: 100%;
-  background-color: blueviolet;
-}
+
 .experience{
   height: 100vh;
   width: 100%;

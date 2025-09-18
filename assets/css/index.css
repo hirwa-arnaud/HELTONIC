@@ -75,6 +75,12 @@ li::after{
  .box h1 {
      text-align: center; 
     }
+    .img-cont h2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    font-family: Montserrat;
+    }
     .products {
          display: flex;
           gap: 20px;
